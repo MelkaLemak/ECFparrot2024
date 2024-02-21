@@ -88,7 +88,30 @@ CREATE TABLE `secure` (
 
 INSERT INTO `secure` (`id`, `user`, `password`, `role`) VALUES
 (0, 'Joel', '$2y$10$VLJlqO.2lZeFexw74JP6lefCpDme1Yy7QLnlPfiZ1fkSaOif092ie', 2),
-(0, 'V.Parrot', '$2y$10$13VDXdZouKLXzdAsb.fh3O9czzBmsycN3/TEo3Uk1QnDTzibth4Pe', 1);
+(0, 'V.Parrot', '$2y$10$13VDXdZouKLXzdAsb.fh3O9czzBmsycN3/TEo3Uk1QnDTzibth4Pe', 1),
+(3, 'employe', '$2y$10$Od/NaLNtJWalQCpa71hlc.C7lJoucV5xy1ypgb1T1xjc2rBnYikTS', 2);
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `secure`
+--
+ALTER TABLE `secure`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `secure`
+--
+ALTER TABLE `secure`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
 
 -- --------------------------------------------------------
 
