@@ -21,7 +21,7 @@ CREATE TABLE `services` (
 )
 
 CREATE TABLE `secure` (
-  `id` int(11) NOT NULL,
+  `id` int(11) AUTO_INCREMENT PRIMARY KEY,
   `user` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
   `role` int(11) NOT NULL
