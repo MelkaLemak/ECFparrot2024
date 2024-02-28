@@ -6,12 +6,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 1) {
 }
 $pageTitle="gestion";
 require '../templates/header.php';
-require '../configuration/connexionBDD.php';
-
-if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 1) {
-    header('Location:../nav/espace-pro.php');
-    exit();
-} ?>
+require '../configuration/connexionBDD.php';?>
 
     <section class="features">
   <a href="ajouter-vehicules.php" class="feature">
